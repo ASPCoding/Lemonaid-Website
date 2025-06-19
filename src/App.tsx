@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import lemonBanner from './assets/gang_eyes_2.png'
+import lemonBanner from './assets/fresh lemonaid.avif'
 import instalogo from './assets/insta.png'
 import twitterlogo from './assets/twitterlogo.png'
 import './App.css'
@@ -26,14 +26,12 @@ function App() {
       </div>
 
       <div className="welcome">
-        <div>
-          <div>
+        <div id="grad_background">
             <img src={lemonBanner} id="banner"/>
-          </div>
         </div>
 
-        <div id="">
-          
+        <div id="links">
+          <p>welcome :3c</p>
         </div>
       </div>
 
