@@ -10,16 +10,35 @@ function App() {
   return (
     <>
       <div className="navbar">
-        <p>Lemonaid |</p>
-        <a href="https://www.instagram.com/lem0na1d_">
-          <img src={instalogo} id="instalogo"/>
-        </a>
-        <a href="https://x.com/lem0na1d_">
-          <img src={twitterlogo} id="twitlogo"/>
-        </a>
+        <div id="name">
+          <p>Lemonaid |</p>
+        </div>
+
+        <div id="socials">
+          <a href="https://www.instagram.com/lem0na1d_">
+            <img src={instalogo} id="instalogo"/>
+          </a>
+
+          <a href="https://x.com/lem0na1d_">
+            <img src={twitterlogo} id="twitlogo"/>
+          </a>
+        </div>
       </div>
-      <div>
-        <img src={lemonBanner} id="banner"/>
+
+      <div className="welcome">
+        <div>
+          <div>
+            <img src={lemonBanner} id="banner"/>
+          </div>
+        </div>
+
+        <div id="">
+          
+        </div>
+      </div>
+
+      <div className="artworks">
+
       </div>
     </>
   )

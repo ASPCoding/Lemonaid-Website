@@ -1,8 +1,23 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  height: 100vh;
+  width: 100%;
+  margin: 0vh;
+  padding: 0vh;
   text-align: center;
+  align-items: center;
+}
+
+.navbar{
+  padding: 40px;
+  border-bottom: 2px solid black;
+}
+
+#name {
+  float:left;
+}
+
+#socials {
+  float: right;
 }
 
 #banner{
@@ -18,19 +33,6 @@
 #twitlogo{
   height: 1em;
   width: 1em;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
