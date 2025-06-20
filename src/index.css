@@ -35,14 +35,13 @@ div {
 }
 
 h1 {
+  margin: 0;
   font-size: 3.2em;
   line-height: 1.1;
 }
 
 p  {
   margin: 0;
-  width: fit-content;
-  height: fit-content;
 }
 
 button {

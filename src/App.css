@@ -41,11 +41,32 @@
 
 #banner{
   padding: 1em;
-  width: 80%;
+  width: 75%;
   aspect-ratio: 1/1.30122591944;
   border-radius: 3em;
 }
 
+#links {
+  align-items: center;
+}
+
+#commision {
+  width: 80%;
+  margin: 10px;
+  background-color: #ff9899;
+}
+
+#example {
+  width: 80%;
+  margin: 10px;
+  background-color: #ffe576;
+}
+
+#tos {
+  width: 80%;
+  margin: 10px;
+  background-color: #98bffa;
+}
 
 @keyframes logo-spin {
   from {
