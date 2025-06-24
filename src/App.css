@@ -33,6 +33,7 @@
 .welcome{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows:  1fr;
 }
 
 #grad_background{
@@ -40,10 +41,17 @@
 }
 
 #banner{
-  padding: 1em;
+  padding: 5%;
   width: 75%;
   aspect-ratio: 1/1.30122591944;
-  border-radius: 3em;
+  border-radius: 8%;
+}
+
+@media screen and (max-width: 800px){
+  .welcome{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 #links {
@@ -52,21 +60,30 @@
 
 #commision {
   width: 80%;
+  height: 7%;
   margin: 10px;
   background-color: #ff9899;
 }
 
 #example {
   width: 80%;
+  height: 7%;
   margin: 10px;
   background-color: #ffe576;
 }
 
 #tos {
   width: 80%;
+  height: 7%;
   margin: 10px;
   background-color: #98bffa;
 }
+
+#test{
+  width: 500px;
+}
+
+
 
 @keyframes logo-spin {
   from {

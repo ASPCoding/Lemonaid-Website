@@ -50,7 +50,7 @@ function App() {
       </div>
 
       <div className="aboutme">
-        <p>hi</p>
+        
       </div>
 
       <div className="artworks">
