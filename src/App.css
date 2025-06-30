@@ -1,5 +1,5 @@
 #root {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0vh;
   padding: 0vh;
@@ -8,7 +8,8 @@
 }
 
 .navbar{
-  padding: 40px;
+  padding-top: 2em;
+  padding-bottom: 2em;
   border-bottom: 2px solid black;
 }
 
@@ -21,28 +22,33 @@
 }
 
 #instalogo{
-  height: 1em;
   width: 1em;
+  aspect-ratio: 1;
 }
 
 #twitlogo{
-  height: 1em;
   width: 1em;
+  aspect-ratio: 1;
 }
 
 .welcome{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows:  1fr;
+  align-items: center;
 }
 
 #grad_background{
+  align-items: center;
   background-image: conic-gradient(#ffce87 1deg, #ffe576 45deg, #98bffa 160deg,#ff9899 315deg, #ffce87 359deg);
 }
 
 #banner{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
   padding: 5%;
-  width: 75%;
+  width: 80%;
   aspect-ratio: 1/1.30122591944;
   border-radius: 8%;
 }
