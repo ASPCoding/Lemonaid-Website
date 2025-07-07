@@ -8,17 +8,20 @@
 }
 
 .navbar{
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  margin: 0%;
   border-bottom: 2px solid black;
 }
 
 #name {
   float:left;
+  margin-left: 5%;
 }
 
 #socials {
   float: right;
+  margin-right: 5%
 }
 
 #instalogo{
@@ -61,6 +64,7 @@
 }
 
 #links {
+  display: block;
   align-items: center;
 }
 
@@ -89,6 +93,49 @@
   width: 500px;
 }
 
+.aboutme{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  --columns: 10;
+  --gridWidth: calc(1 / var(--columns) * 100vw);
+  --bannerpos: 2;
+  grid-template-rows: 1fr;
+}
+
+
+#twitBanner{
+  width: 100%;
+  aspect-ratio: 1322/514;
+  grid-column-start: var(--bannerpos);
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  z-index: 1;
+}
+
+#graphBackground{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-bottom: 0 solid transparent;
+  z-index: 2;
+}
+
+#graphBackgroundtri{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 0%;
+  height: 0%;
+  border-top: calc(var(--gridWidth) * calc(var(--columns) - var(--bannerpos) + 1) * 514 / 1332) solid transparent;
+  border-left: calc(var(--gridWidth) * .5) solid blue;  
+  z-index:2;
+}
 
 
 @keyframes logo-spin {

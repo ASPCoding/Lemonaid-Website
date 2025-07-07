@@ -3,6 +3,7 @@ import lemonBanner from './assets/fresh lemonaid.avif'
 import instalogo from './assets/insta.png'
 import twitterlogo from './assets/twitterlogo.png'
 import shark from './assets/bday decals blahaj.avif'
+import twitBanner from './assets/twitter banner attepmt1.avif'
 import './App.css'
 
 function App() {
@@ -50,7 +51,9 @@ function App() {
       </div>
 
       <div className="aboutme">
-        
+        <img src={twitBanner} id='twitBanner'/>
+        <div id='graphBackground'/>
+        <div id='graphBackgroundtri'/>
       </div>
 
       <div className="artworks">
