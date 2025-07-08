@@ -4,6 +4,7 @@ import instalogo from './assets/insta.png'
 import twitterlogo from './assets/twitterlogo.png'
 import shark from './assets/bday decals blahaj.avif'
 import twitBanner from './assets/twitter banner attepmt1.avif'
+import aboutGraph from './assets/again no look.avif'
 import './App.css'
 
 function App() {
@@ -52,12 +53,20 @@ function App() {
 
       <div className="aboutme">
         <img src={twitBanner} id='twitBanner'/>
-        <div id='graphBackground'/>
+        <div id='graphBackground'>
+          <h1>About Me</h1>
+          <img src={aboutGraph} id="aboutGraph"/>
+        </div>
         <div id='graphBackgroundtri'/>
+
+        <div id="aboutBackgroundtri"/>
+        <div id="aboutBackground">
+          <p>Your local Vietnamese American furry artist.</p>
+        </div>
       </div>
 
       <div className="artworks">
-
+        
       </div>
     </>
   )
