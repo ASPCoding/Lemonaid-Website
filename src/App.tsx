@@ -8,7 +8,16 @@ import aboutGraph from './assets/again no look.avif'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [view, setView] = useState(0)
+
+  const changeView = (num: number) => {
+    setView(num);
+
+  } 
+
+  function currentView(){
+    return (<p>{view}</p>)
+  }
 
   return (
     <>
@@ -66,7 +75,15 @@ function App() {
       </div>
 
       <div className="artworks">
-        
+        <div id="artNavbar">
+          <button onClick={(_e) => changeView(0)}>School</button>
+          <button onClick={(_e) => changeView(1)}>Twitter</button>
+          <button onClick={(_e) => changeView(2)}>Insta</button>
+        </div>
+
+        <div>
+          {currentView()}
+        </div>
       </div>
     </>
   )
