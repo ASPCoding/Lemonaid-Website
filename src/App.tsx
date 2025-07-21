@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {SchoolView} from "./School Images/School"
 import lemonBanner from './assets/fresh lemonaid.avif'
 import instalogo from './assets/insta.png'
 import twitterlogo from './assets/twitterlogo.png'
@@ -16,7 +17,12 @@ function App() {
   } 
 
   function currentView(){
-    return (<p>{view}</p>)
+    if(view == 0){
+      return  SchoolView()
+    }
+    else{
+      return <div><p>{view}</p></div>
+    }
   }
 
   return (
